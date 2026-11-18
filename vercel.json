@@ -1,6 +1,11 @@
 {
-  "framework": "static",
-  "functions": {},
+  "framework": "vite",
+  "root": ".",
+  "build": {
+    "command": "npm run build",
+    "outputDirectory": "dist"
+  },
+  "publicDirectory": "dist",
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
   ]
