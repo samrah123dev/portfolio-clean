@@ -1,9 +1,6 @@
 {
-  "framework": "vite",
-  "build": {
-    "command": "npm run build",
-    "outputDirectory": "dist"
-  },
+  "framework": "static",
+  "functions": {},
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
   ]
