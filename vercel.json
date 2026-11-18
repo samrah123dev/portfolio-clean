@@ -1,8 +1,17 @@
 {
-  "builds": [
-    { "src": "dist/**", "use": "@vercel/static" }
-  ],
+  "framework": null,
   "routes": [
     { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0"
+        }
+      ]
+    }
   ]
 }
